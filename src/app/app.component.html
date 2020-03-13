@@ -29,9 +29,15 @@
               <button (click)="Resolver()" class="button"> Realizar </button>
               <br>
               <br>
-              <span class="resultado">
+                <span class="resultado">
                 Resultado : {{result}}
                 </span>
+                <hr>
+                <button (click)="ObtenerLocalStorage()" class="button">Ver Historial </button>
+        <textarea readonly cols="40" rows="10" class="historial">
+            {{getLocal}}
+        </textarea>
           </article>
         </div> 
+        
       </div>
